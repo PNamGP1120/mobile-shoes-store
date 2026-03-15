@@ -22,20 +22,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileShoesStore">
 
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-
-        <!-- Activity test upload Cloudinary -->
-        <activity
-            android:name=".ui.TestCloudinaryActivity"
+        <activity android:name=".ui.admin.AdminDashboardActivity" />
+        <activity android:name=".ui.home.HomeActivity" />
+        <activity android:name=".ui.auth.RegisterActivity" />
+        <activity android:name=".ui.auth.LoginActivity"
             android:exported="true">
-
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
     </application>
